@@ -31,7 +31,7 @@ const AppointmentCard: React.FC<AppointmentCardProps> = ({
   };
   const createWhatsAppLink = () => {
     const message = encodeURIComponent(`Olá! Gostaria de confirmar meu agendamento:\n\n` + `Embarcação: ${boat.name}\n` + `Data: ${formatDate(appointment.date)}\n` + `Horário: ${timeSlot.startTime} - ${timeSlot.endTime}\n\n` + `Aguardo confirmação. Obrigado!`);
-    return `https://wa.me/5511999999999?text=${message}`;
+    return `https://wa.me/5547996988775?text=${message}`;
   };
   return <div className="bg-white rounded-lg shadow overflow-hidden">
       <div className="p-4">
