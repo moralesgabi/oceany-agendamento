@@ -1,0 +1,86 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 205 85% 51%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 205 85% 51%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium text-oceany-dark;
+  }
+}
+
+/* Estilos personalizados para o calendário */
+.calendar-day {
+  @apply rounded-md text-center p-2 cursor-pointer transition-colors;
+}
+
+.calendar-day.available {
+  @apply hover:bg-oceany-blue hover:text-white;
+}
+
+.calendar-day.available.selected {
+  @apply bg-oceany-blue text-white;
+}
+
+.calendar-day.unavailable {
+  @apply bg-gray-100 text-gray-400 cursor-not-allowed;
+}
+
+.time-slot {
+  @apply px-4 py-2 rounded-md border border-gray-200 text-center cursor-pointer transition-colors;
+}
+
+.time-slot.available {
+  @apply hover:bg-oceany-blue hover:text-white;
+}
+
+.time-slot.available.selected {
+  @apply bg-oceany-blue text-white;
+}
+
+.time-slot.unavailable {
+  @apply bg-gray-100 text-gray-400 cursor-not-allowed;
+}
