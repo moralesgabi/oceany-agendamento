@@ -15,7 +15,7 @@ const Header = () => {
         </Link>
 
         <div className="flex items-center gap-4">
-          <a href="https://www.instagram.com/oceany" target="_blank" rel="noopener noreferrer" className="text-oceany-dark hover:text-oceany-blue transition-colors" aria-label="Instagram">
+          <a href="https://www.instagram.com/oceanybr" target="_blank" rel="noopener noreferrer" className="text-oceany-dark hover:text-oceany-blue transition-colors" aria-label="Instagram">
             <Instagram size={24} />
           </a>
 
