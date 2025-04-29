@@ -9,7 +9,7 @@ const Footer = () => {
           </p>
           <div className="mt-2 md:mt-0">
             <p className="text-sm">
-              Oceany - Barcos e diversão náutica com estilo
+              Oceany - Diversão náutica com estilo
             </p>
           </div>
         </div>
