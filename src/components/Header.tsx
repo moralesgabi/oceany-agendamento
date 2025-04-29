@@ -11,7 +11,7 @@ const Header = () => {
   return <header className="bg-white shadow-sm py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <img src="/imgs/logo-oceany.png" alt="Oceany Logo" className="h-10 object-contain" />
+          <img src="/lovable-uploads/logo-oceany.png" alt="Oceany Logo" className="h-10 object-contain" />
         </Link>
 
         <div className="flex items-center gap-4">
